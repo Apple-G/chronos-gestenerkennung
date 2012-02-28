@@ -50,6 +50,7 @@ namespace ChronosGestenerkennung.Gestures
         //Search for push (Stoßen)
         private bool isStossen(Point[] points, int lenght)
         {
+
             return false;
         }
         //Search for wipe up / down (Wischen Auf / Ab)

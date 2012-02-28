@@ -18,13 +18,14 @@ namespace ChronosGestenerkennung.Com
         private Point[] values;
         private Gesture[] gesture;
         private Algo algo;
+        private AlgoNew algo2;
 
         public Communication()
         {
             myChronos = new Chronos();
             arraySize = 10;
             values = new Point[arraySize];
-            for (int i=0; i<arraySize; i++)
+            for (int i = 0; i < arraySize; i++)
             {
                 values[i] = new Point(0, 0, 0);
             }
@@ -44,6 +45,7 @@ namespace ChronosGestenerkennung.Com
 
             //A new Algorithm object
             algo = new Algo(gesture, definedGesture);
+            algo2 = new AlgoNew();
         }
 
         public bool Connect()
@@ -103,21 +105,25 @@ namespace ChronosGestenerkennung.Com
                 valueIndex = 0;
                 AnalyseGesture();
             }
-
+            AnalyseGesture2();
             values[valueIndex].X = GetX();
-            values[valueIndex].Y= GetY();
+            values[valueIndex].Y = GetY();
             values[valueIndex].Z = GetZ();
             valueIndex++;
         }
 
         private void AnalyseGesture()
         {
-           GestureType temp = algo.getGesture(values, arraySize);
-           if (temp != GestureType.None)
-               analysedGesture = temp;
+            GestureType temp = algo.getGesture(values, arraySize);
+            if (temp != GestureType.None)
+                analysedGesture = temp;
         }
-
-
+        private void AnalyseGesture2()
+        {
+            GestureType temp = algo2.getGesture(values, arraySize);
+            if (temp != GestureType.None)
+                analysedGesture = temp;
+        }
 
     }
 }
