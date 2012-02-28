@@ -41,12 +41,12 @@ namespace ChronosGestenerkennung
             valueIndex = 0;
         }
 
-        private int CalculateLocalMin()
+        public int CalculateMin()
         {
             return CalculateMin(0, arraySize);
         }
 
-        private int CalculateMin(int start, int end)
+        public int CalculateMin(int start, int end)
         {
             int min = 255;
             if (end <= arraySize)
@@ -62,12 +62,12 @@ namespace ChronosGestenerkennung
             }
             return min;
         }
-        private int CalculateLocalMax()
+        public int CalculateMax()
         {
             return CalculateMax(0, arraySize);
         }
 
-        private int CalculateMax(int start, int end)
+        public int CalculateMax(int start, int end)
         {
             int max = -255;
             if (end <= arraySize)
