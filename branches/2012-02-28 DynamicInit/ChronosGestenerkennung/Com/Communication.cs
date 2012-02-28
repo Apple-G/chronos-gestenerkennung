@@ -7,7 +7,6 @@ namespace ChronosGestenerkennung.Com
     class Communication
     {
         private int arraySize { get { return 10; } }
-        private int recordIndexMax { get { return 10; } }
 
         private Chronos myChronos;
         private String portName;
@@ -31,10 +30,13 @@ namespace ChronosGestenerkennung.Com
         {
             myChronos = new Chronos();
             values = new Point[arraySize];
-values2 = new Point[arraySize];
+            values2 = new Point[arraySize];
+            RecordValues = new Point[arraySize];
             for (int i=0; i<arraySize; i++)
             {
                 values[i] = new Point(0, 0, 0);
+                RecordValues[i] = values[i];
+                values2[i] = values[i];
             }
             valueIndex = 0;
             analysedGesture = GestureType.None;
@@ -139,11 +141,11 @@ values2 = new Point[arraySize];
 
             }
 
-            TestGeste(20, 70);
+
 
             if (record)
             {
-                if (recordIndex < recordIndexMax)
+                if (recordIndex < arraySize)
                 {
                     RecordValues[recordIndex] = values[valueIndex];
                     recordIndex++;
@@ -152,6 +154,10 @@ values2 = new Point[arraySize];
                 {
                     record = false;
                 }
+            }
+            else
+            {
+                TestGeste(0, 70);
             }
             
             valueIndex++;
@@ -171,7 +177,10 @@ values2 = new Point[arraySize];
             for (int i = 0; i < arraySize; i++)
             {
                 if (CheckValues(offset, values2[i].X, RecordValues[i].X))
+                {
+                    Console.WriteLine(values2[i].X + " = " + RecordValues[i].X);
                     countTreffer++;
+                }
             }
             Console.WriteLine("Treffer: " + countTreffer + ", => " +(countTreffer / arraySize) * 100);
 
@@ -203,7 +212,6 @@ values2 = new Point[arraySize];
         {
             record = true;
             recordIndex = 0;
-            RecordValues = new Point[recordIndexMax];
         }
     }
 }

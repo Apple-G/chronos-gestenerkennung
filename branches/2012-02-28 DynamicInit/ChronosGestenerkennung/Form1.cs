@@ -44,7 +44,7 @@ namespace ChronosGestenerkennung
                 {
                     labelStatus.Text = "Error 2000: No Port";
                 }
-               
+
             }
         }
 
@@ -57,6 +57,18 @@ namespace ChronosGestenerkennung
             labelZ.Text = "Z: " + chronosCom.GetZ();
 
             labelGesture.Text = "Analyzed Gesture: " + chronosCom.analysedGesture;
+
+            if (chronosCom.record)
+                buttonConfig.Enabled = false;
+            else
+                buttonConfig.Enabled = true;
         }
+
+        private void buttonConfig_Click(object sender, EventArgs e)
+        {
+            chronosCom.StartRecord();
+            Console.WriteLine("StartConfigTest");
+        }
+
     }
 }

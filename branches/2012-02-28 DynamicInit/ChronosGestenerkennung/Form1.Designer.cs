@@ -38,6 +38,7 @@
             this.labelY = new System.Windows.Forms.Label();
             this.labelRaw = new System.Windows.Forms.Label();
             this.labelGesture = new System.Windows.Forms.Label();
+            this.buttonConfig = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonConnect
@@ -117,11 +118,22 @@
             this.labelGesture.TabIndex = 8;
             this.labelGesture.Text = "Gesture: ";
             // 
+            // buttonConfig
+            // 
+            this.buttonConfig.Location = new System.Drawing.Point(116, 139);
+            this.buttonConfig.Name = "buttonConfig";
+            this.buttonConfig.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfig.TabIndex = 9;
+            this.buttonConfig.Text = "Config Test";
+            this.buttonConfig.UseVisualStyleBackColor = true;
+            this.buttonConfig.Click += new System.EventHandler(this.buttonConfig_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 138);
+            this.ClientSize = new System.Drawing.Size(351, 170);
+            this.Controls.Add(this.buttonConfig);
             this.Controls.Add(this.labelGesture);
             this.Controls.Add(this.labelRaw);
             this.Controls.Add(this.labelY);
@@ -148,6 +160,7 @@
         private System.Windows.Forms.Label labelY;
         private System.Windows.Forms.Label labelRaw;
         private System.Windows.Forms.Label labelGesture;
+        private System.Windows.Forms.Button buttonConfig;
     }
 }
 
