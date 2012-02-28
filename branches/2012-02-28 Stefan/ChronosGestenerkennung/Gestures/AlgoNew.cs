@@ -48,6 +48,7 @@ namespace ChronosGestenerkennung.Gestures
                 {
                     return true;
                 }
+
             }
 
             return false;
@@ -61,7 +62,7 @@ namespace ChronosGestenerkennung.Gestures
             {
                 //         Console.WriteLine("minIndex<MaxIndex");
             }
-            if (diff.X < 70 && diff.Y > 140 && diff.Z < 70)
+            if (diff.X < 70 && diff.Y > 120 && diff.Z < 90)
             {
                 Console.WriteLine("x>50 && y>100 && z<50");
                 if (minIndex.X + 1 < maxIndex.X) //erst minimum, dann Maximum
@@ -74,7 +75,52 @@ namespace ChronosGestenerkennung.Gestures
             return false;
         }
 
-
+        private Point getLocalMax(int smallIndex, int bigIndex)
+        {
+            if (smallIndex < bigIndex && smallIndex <= 0 && bigIndex < values.Length)
+            {
+                Point ret = new Point(values[smallIndex].X, values[smallIndex].Y, values[smallIndex].Z);
+                for (int i = smallIndex; i < bigIndex-1; i++)
+                {
+                    if (values[i].X > ret.X)
+                    {
+                        ret.X = values[i].X;
+                    }
+                    if (values[i].Y > ret.Y)
+                    {
+                        ret.Y = values[i].Y;
+                    }
+                    if (values[i].Z > ret.Z)
+                    {
+                        ret.Z = values[i].Z;
+                    }
+                }return ret;
+            }
+            throw new Exception("wrong arguments");
+        }
+        private Point getLocalMin(int smallIndex, int bigIndex)
+        {
+            if (smallIndex < bigIndex && smallIndex <= 0 && bigIndex < values.Length)
+            {
+                Point ret = new Point(values[smallIndex].X, values[smallIndex].Y, values[smallIndex].Z);
+                for (int i = smallIndex; i < bigIndex - 1; i++)
+                {
+                    if (values[i].X < ret.X)
+                    {
+                        ret.X = values[i].X;
+                    }
+                    if (values[i].Y < ret.Y)
+                    {
+                        ret.Y = values[i].Y;
+                    }
+                    if (values[i].Z < ret.Z)
+                    {
+                        ret.Z = values[i].Z;
+                    }
+                } return ret;
+            }
+            throw new Exception("wrong arguments");
+        }
         private Point minMaxDifferenz()
         {
             int maxX = getMax(this.values).X;
@@ -85,7 +131,7 @@ namespace ChronosGestenerkennung.Gestures
             int minZ = getMin(this.values).Z;
             return new Point(maxX - minX, maxY - minY, maxZ - minZ);
         }
-        private Point getMinIndex()
+        private Point getIndex(Point )
         {
             int x = -1, y = -1, z = -1;//hässlich
             Point min = getMin(this.values);
@@ -140,7 +186,6 @@ namespace ChronosGestenerkennung.Gestures
             }
             return new Point(minX, minY, minZ);
         }
-
         private Point getMax(Point[] point)
         {
             int maxX = point[0].X;

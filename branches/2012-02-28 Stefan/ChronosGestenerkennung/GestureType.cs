@@ -10,6 +10,7 @@ namespace ChronosGestenerkennung
         Right,
         Circle,
         Wave,
+        Wrong,
         None
     }
 }
