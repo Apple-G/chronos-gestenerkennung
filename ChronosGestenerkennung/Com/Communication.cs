@@ -6,7 +6,7 @@ namespace ChronosGestenerkennung.Com
 {
     class Communication
     {
-        private int arraySize { get { return 25; } }
+        private int arraySize { get { return 50; } }
 
         private Chronos myChronos;
         private String portName;
@@ -115,7 +115,7 @@ namespace ChronosGestenerkennung.Com
             if (valueIndex >= arraySize)
             {
                 valueIndex = 0;
-               // AnalyseGesture(); Yane's Algorithmus
+                // AnalyseGesture(); Yane's Algorithmus
             }
             AnalyseGesture2();
             values[valueIndex].X = GetX();
@@ -159,8 +159,8 @@ namespace ChronosGestenerkennung.Com
             }
             else
             {
-            //auskommentiert, damit Tobis test nicht ausgeführt wird.
-           //     TestGeste(0, 70);
+                //auskommentiert, damit Tobis test nicht ausgeführt wird.
+                //     TestGeste(0, 70);
 
             }
             //call Algorithm from Stefan
@@ -171,24 +171,25 @@ namespace ChronosGestenerkennung.Com
 
         private void AnalyseGesture()
         {
-            GestureType temp = algo.getGesture(values, arraySize);
-            if (temp != GestureType.None)
-                analysedGesture = temp;
-        }
-        private void AnalyseGesture2()
-        {
-            GestureType temp = algo2.getGesture(values, arraySize);
-            if (temp != GestureType.None)
-                analysedGesture = temp;
+            //      GestureType temp = algo.getGesture(values, arraySize);
+            //    if (temp != GestureType.None)
+            //        analysedGesture = temp;
         }
 
         private void AnalyseGesture2()
         {
             GestureType temp = algo2.getGesture(values2, arraySize);
             if (temp != GestureType.None)
-                Console.WriteLine(temp);
+            {
                 analysedGesture = temp;
+                for (int i = 0; i < arraySize; i++)
+                {
+                    values2[i] = new Point(0, 0, 0);
+                }
+            }
+
         }
+
 
         // Test geste
         private void TestGeste(int offset, int genauigkeit)

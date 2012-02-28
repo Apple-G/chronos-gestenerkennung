@@ -61,7 +61,6 @@
     </Compile>
     <Compile Include="Gestures\Algo.cs" />
     <Compile Include="Gestures\AlgoNew.cs" />
-    <Compile Include="Gestures\Class1.cs" />
     <Compile Include="Gestures\Gesture.cs" />
     <Compile Include="GestureType.cs" />
     <Compile Include="Point.cs" />
