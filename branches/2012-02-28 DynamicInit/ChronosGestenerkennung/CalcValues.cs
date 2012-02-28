@@ -15,18 +15,12 @@ namespace ChronosGestenerkennung
         {
             set
             {
-                if (values[valueIndex] == null)
+                for (int i = 0; i < arraySize - 1; i++)
                 {
-                    values[valueIndex] = value;
+                    values[i] = values[i + 1];
                 }
-                else
-                {
-                    for (int i = 0; i < arraySize - 1; i++)
-                    {
-                        values[i] = values[i + 1];
-                    }
-                    values[arraySize - 1] = value;
-                }
+                values[arraySize - 1] = value;
+
                 valueIndex++;
             }
         }
@@ -47,97 +41,97 @@ namespace ChronosGestenerkennung
             valueIndex = 0;
         }
 
-        public void SetValues(int value)
+        private int CalculateLocalMin()
         {
-            
+            return CalculateMin(0, arraySize);
         }
 
-
-        private void CalculateMin()
+        private int CalculateMin(int start, int end)
         {
-            if (values != null)
+            int min = 255;
+            if (end <= arraySize)
             {
-                Min = new Point(255, 255, 255);
-                MinIndex = new Point(0, 0, 0);
-                for (int i = 0; i < values.Length; i++)
+
+                for (int i = start; i < end; i++)
                 {
-                    if (values[i].X < Min.X)
+                    if (values[i] < min)
                     {
-                        Min.X = values[i].X;
-                        MinIndex.X = i;
+                        min = values[i];
                     }
-
-                    if (values[i].Y < Min.Y)
-                    {
-                        Min.Y = values[i].Y;
-                        MinIndex.Y = i;
-                    }
-
-                    if (values[i].Z < Min.Z)
-                    {
-                        Min.Z = values[i].Z;
-                        MinIndex.Z = i;
-                    }
-
                 }
             }
+            return min;
+        }
+        private int CalculateLocalMax()
+        {
+            return CalculateMax(0, arraySize);
         }
 
-
-
-        private void CalculateMax()
+        private int CalculateMax(int start, int end)
         {
-            if (values != null)
+            int max = -255;
+            if (end <= arraySize)
             {
-                Max = new Point(-255, -255, -255);
-                MaxIndex = new Point(0, 0, 0);
 
-                for (int i = 0; i < values.Length; i++)
+                for (int i = start; i < end; i++)
                 {
-                    if (values[i].X > Max.X)
+                    if (values[i] > max)
                     {
-                        Max.X = values[i].X;
-                        MaxIndex.X = i;
+                        max = values[i];
                     }
-
-                    if (values[i].Y > Max.Y)
-                    {
-                        Max.Y = values[i].Y;
-                        MaxIndex.Y = i;
-                    }
-
-                    if (values[i].Z > Max.Z)
-                    {
-                        Max.Z = values[i].Z;
-                        MaxIndex.Z = i;
-                    }
-
                 }
             }
+            return max;
         }
 
-        private void CalculateDifference()
+        public int CalculateDifference()
         {
-            Difference = new Point((Max.X - Min.X), (Max.Y - Min.Y), (Max.Z - Min.Z));
+            return CalculateDifference(0, arraySize);
         }
 
-        private void CalculateDirection()
+        public int CalculateDifference(int start, int end)
         {
-            DirectionUp = new bool[3];
-            if (MaxIndex.X > MinIndex.X)
-                DirectionUp[0] = true;
-            else
-                DirectionUp[0] = false;
+            return (CalculateMax(start, end) - CalculateMin(start, end));
+        }
 
-            if (MaxIndex.Y > MinIndex.Y)
-                DirectionUp[1] = true;
-            else
-                DirectionUp[1] = false;
+        public bool IsDirectionUp()
+        {
+            return IsDirectionUp(0, arraySize);
+        }
 
-            if (MaxIndex.Z > MinIndex.Z)
-                DirectionUp[2] = true;
+        public bool IsDirectionUp(int start, int end)
+        {
+            return (GetIndex(CalculateMax(start, end)) > GetIndex(CalculateMin(start, end)));
+        }
+
+        public int GetIndex(int value)
+        {
+            for (int i = 0; i < arraySize; i++)
+            {
+                if (values[i] == value)
+                    return i;
+            }
+            return -1;
+        }
+
+        public int CalculateMedian()
+        {
+            int[] tempArray = new int[arraySize];
+
+            for (int i = 0; i < arraySize; i++)
+            {
+                tempArray = values;
+            }
+
+            Array.Sort(tempArray);
+            if (arraySize % 2 == 0)
+            {
+                return (tempArray[arraySize / 2] + tempArray[(arraySize / 2) + 1]) / 2;
+            }
             else
-                DirectionUp[2] = false;
+            {
+                return tempArray[arraySize / 2];
+            }
         }
     }
 }

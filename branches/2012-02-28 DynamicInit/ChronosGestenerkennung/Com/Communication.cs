@@ -8,17 +8,11 @@ namespace ChronosGestenerkennung.Com
     {
         private int arraySize { get { return 10; } }
 
-    }
+    
 
         public GestureType analysedGesture { private set; get; }
 
-        private int valueIndex;
-
-        private Point[] values;
-        private Point[] values2;
-        private Gesture[] gesture;
-        private Algo algo;
-
+       
         public bool record { private set; get; }
         private int recordIndex;
         private Point[] RecordValues;
@@ -73,6 +67,9 @@ namespace ChronosGestenerkennung.Com
 
         public void UpdateData()
         {
+
+
+
             Data = GetData();
 
             if (valueIndex >= arraySize)
