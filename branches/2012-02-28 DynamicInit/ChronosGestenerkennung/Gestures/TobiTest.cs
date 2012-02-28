@@ -31,6 +31,7 @@ namespace ChronosGestenerkennung.Gestures
         {
             Calculate(p);
             TobiGesture t = new TobiGesture(name, Difference, DirectionUp);
+            Console.WriteLine("Difference X: " + t.Difference.X + "\t Y: " + t.Difference.Y + "\t Z: " + t.Difference.Z);
             Console.WriteLine("DirectionUp X: " + t.DirectionUp[0] + "\t Y: " + t.DirectionUp[1] + "\t Z: " + t.DirectionUp[2]);
             foreach (TobiGesture g in gesture)
             {
@@ -45,15 +46,14 @@ namespace ChronosGestenerkennung.Gestures
 
 
             gesture.Add(t);
-            Console.WriteLine("DirectionUp X: " + t.DirectionUp[1] + "\t Y: " + t.DirectionUp[2] + "\t Z: ");
-
         }
 
         public GestureType Analytic(Point [] p)
         {
             Calculate(p);
 
-
+            Console.WriteLine("Difference X: " + Difference.X + "\t Y: " + Difference.Y + "\t Z: " + Difference.Z);
+            Console.WriteLine("DirectionUp X: " + DirectionUp[0] + "\t Y: " + DirectionUp[1] + "\t Z: " + DirectionUp[2]);
             foreach (TobiGesture g in gesture)
             {
                 if ((Difference.X >= g.Difference.X) && (DirectionUp[0] == g.DirectionUp[0]))
