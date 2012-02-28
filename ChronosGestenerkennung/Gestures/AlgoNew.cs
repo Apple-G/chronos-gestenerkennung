@@ -78,10 +78,10 @@ namespace ChronosGestenerkennung.Gestures
             if (valueX.CalculateDifference() < 70 && valueY.CalculateDifference() < 70 && valueZ.CalculateDifference() > 120)
             {
                 //Min und Max jeweils weit genug von Median entfernt?
-                Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax() + "median-min: " + (valueZ.CalculateMedian() - valueZ.CalculateMin())));
+                Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax()));
                 if ((valueZ.CalculateMedian() - valueZ.CalculateMin()) > MedianDiffValue && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
                 {
-
+                    Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax()));
                     return !valueZ.IsDirectionUp(); //erst Max, dann Min
                 }
             }
@@ -95,6 +95,7 @@ namespace ChronosGestenerkennung.Gestures
                 //Min und Max jeweils weit genug von Median entfernt?
                 if (valueZ.CalculateMedian() - valueZ.CalculateMin() > MedianDiffValue && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
                 {
+                    Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax()));
                     return valueZ.IsDirectionUp(); //erst Max, dann Min
                 }
             }
