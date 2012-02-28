@@ -37,11 +37,15 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ChartControl">
+      <HintPath>..\ChartControl.dll</HintPath>
+    </Reference>
     <Reference Include="eZ430_Chronos_Net">
       <HintPath>..\eZ430_Chronos_Net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +65,8 @@
     </Compile>
     <Compile Include="Gestures\Algo.cs" />
     <Compile Include="Gestures\Gesture.cs" />
+    <Compile Include="Gestures\TobiGesture.cs" />
+    <Compile Include="Gestures\TobiTest.cs" />
     <Compile Include="GestureType.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />

@@ -38,7 +38,9 @@
             this.labelY = new System.Windows.Forms.Label();
             this.labelRaw = new System.Windows.Forms.Label();
             this.labelGesture = new System.Windows.Forms.Label();
-            this.buttonConfig = new System.Windows.Forms.Button();
+            this.buttonConfigPush = new System.Windows.Forms.Button();
+            this.buttonTimer = new System.Windows.Forms.Button();
+            this.buttonConfigUp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonConnect
@@ -79,6 +81,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // labelZ
@@ -118,22 +121,44 @@
             this.labelGesture.TabIndex = 8;
             this.labelGesture.Text = "Gesture: ";
             // 
-            // buttonConfig
+            // buttonConfigPush
             // 
-            this.buttonConfig.Location = new System.Drawing.Point(116, 139);
-            this.buttonConfig.Name = "buttonConfig";
-            this.buttonConfig.Size = new System.Drawing.Size(75, 23);
-            this.buttonConfig.TabIndex = 9;
-            this.buttonConfig.Text = "Config Test";
-            this.buttonConfig.UseVisualStyleBackColor = true;
-            this.buttonConfig.Click += new System.EventHandler(this.buttonConfig_Click);
+            this.buttonConfigPush.Location = new System.Drawing.Point(12, 167);
+            this.buttonConfigPush.Name = "buttonConfigPush";
+            this.buttonConfigPush.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfigPush.TabIndex = 9;
+            this.buttonConfigPush.Text = "Config Push";
+            this.buttonConfigPush.UseVisualStyleBackColor = true;
+            this.buttonConfigPush.Click += new System.EventHandler(this.buttonConfigPush_Click);
+            // 
+            // buttonTimer
+            // 
+            this.buttonTimer.Location = new System.Drawing.Point(228, 167);
+            this.buttonTimer.Name = "buttonTimer";
+            this.buttonTimer.Size = new System.Drawing.Size(117, 23);
+            this.buttonTimer.TabIndex = 10;
+            this.buttonTimer.Text = "Start/Stopp Timer";
+            this.buttonTimer.UseVisualStyleBackColor = true;
+            this.buttonTimer.Click += new System.EventHandler(this.buttonTimer_Click);
+            // 
+            // buttonConfigUp
+            // 
+            this.buttonConfigUp.Location = new System.Drawing.Point(93, 167);
+            this.buttonConfigUp.Name = "buttonConfigUp";
+            this.buttonConfigUp.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfigUp.TabIndex = 11;
+            this.buttonConfigUp.Text = "Config Up";
+            this.buttonConfigUp.UseVisualStyleBackColor = true;
+            this.buttonConfigUp.Click += new System.EventHandler(this.buttonConfigUp_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 170);
-            this.Controls.Add(this.buttonConfig);
+            this.ClientSize = new System.Drawing.Size(357, 202);
+            this.Controls.Add(this.buttonConfigUp);
+            this.Controls.Add(this.buttonTimer);
+            this.Controls.Add(this.buttonConfigPush);
             this.Controls.Add(this.labelGesture);
             this.Controls.Add(this.labelRaw);
             this.Controls.Add(this.labelY);
@@ -160,7 +185,9 @@
         private System.Windows.Forms.Label labelY;
         private System.Windows.Forms.Label labelRaw;
         private System.Windows.Forms.Label labelGesture;
-        private System.Windows.Forms.Button buttonConfig;
+        private System.Windows.Forms.Button buttonConfigPush;
+        private System.Windows.Forms.Button buttonTimer;
+        private System.Windows.Forms.Button buttonConfigUp;
     }
 }
 

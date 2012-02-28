@@ -59,16 +59,35 @@ namespace ChronosGestenerkennung
             labelGesture.Text = "Analyzed Gesture: " + chronosCom.analysedGesture;
 
             if (chronosCom.record)
-                buttonConfig.Enabled = false;
+                buttonConfigPush.Enabled = false;
             else
-                buttonConfig.Enabled = true;
+                buttonConfigPush.Enabled = true;
         }
 
-        private void buttonConfig_Click(object sender, EventArgs e)
+     
+
+        private void buttonTimer_Click(object sender, EventArgs e)
         {
-            chronosCom.StartRecord();
-            Console.WriteLine("StartConfigTest");
+            timer1.Enabled = !timer1.Enabled;
         }
+
+        private void buttonConfigPush_Click(object sender, EventArgs e)
+        {
+            chronosCom.StartRecord(GestureType.Push);
+            Console.WriteLine("StartConfigPush");
+        }
+
+        private void buttonConfigUp_Click(object sender, EventArgs e)
+        {
+            chronosCom.StartRecord(GestureType.Up);
+            Console.WriteLine("StartConfigUp");
+        }
+
+     
+
+      
+
+
 
     }
 }
