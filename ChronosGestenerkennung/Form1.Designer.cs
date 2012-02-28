@@ -129,7 +129,7 @@
             this.buttonConfigPush.TabIndex = 9;
             this.buttonConfigPush.Text = "Config Push";
             this.buttonConfigPush.UseVisualStyleBackColor = true;
-            this.buttonConfigPush.Click += new System.EventHandler(this.buttonConfigPush_Click);
+    
             // 
             // buttonTimer
             // 
@@ -149,7 +149,6 @@
             this.buttonConfigUp.TabIndex = 11;
             this.buttonConfigUp.Text = "Config Up";
             this.buttonConfigUp.UseVisualStyleBackColor = true;
-            this.buttonConfigUp.Click += new System.EventHandler(this.buttonConfigUp_Click);
             // 
             // Form1
             // 
