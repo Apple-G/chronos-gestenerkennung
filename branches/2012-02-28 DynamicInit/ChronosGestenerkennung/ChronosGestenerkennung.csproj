@@ -37,9 +37,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ChartControl">
-      <HintPath>..\ChartControl.dll</HintPath>
-    </Reference>
     <Reference Include="eZ430_Chronos_Net">
       <HintPath>..\eZ430_Chronos_Net.dll</HintPath>
     </Reference>
