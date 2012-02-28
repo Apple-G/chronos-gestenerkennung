@@ -7,16 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ChronosGestenerkennung.Com;
+using ChronosGestenerkennung.Gestures;
 
 namespace ChronosGestenerkennung
 {
     public partial class Form1 : Form
     {
-        private Communication chronosCom;
+        private ChronosCommunication chronosCom;
+        private AlgoNew algoGesture;
 
         public Form1()
         {
-            chronosCom = new Communication();
+            chronosCom = new ChronosCommunication();
+            algoGesture = new AlgoNew();
             InitializeComponent();
 
         }
@@ -44,19 +47,28 @@ namespace ChronosGestenerkennung
                 {
                     labelStatus.Text = "Error 2000: No Port";
                 }
-               
+
             }
         }
 
         void Timer1_Tick(object sender, EventArgs e)
         {
-            chronosCom.UpdateData();
+            chronosCom.UpdateValues();
+            algoGesture.UpdateValues(chronosCom.GetX(), chronosCom.GetY(), chronosCom.GetZ());
             labelRaw.Text = "Raw Value: " + chronosCom.Data.ToString("X");
             labelX.Text = "X: " + chronosCom.GetX();
             labelY.Text = "Y: " + chronosCom.GetY();
             labelZ.Text = "Z: " + chronosCom.GetZ();
 
-            labelGesture.Text = "Analyzed Gesture: " + chronosCom.analysedGesture;
+            labelGesture.Text = "Analyzed Gesture: " + algoGesture.getGesture();
         }
+
+     
+
+        private void buttonTimer_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = !timer1.Enabled;
+        }
+
     }
 }
