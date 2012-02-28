@@ -26,13 +26,16 @@ namespace ChronosGestenerkennung.Com
         private int recordIndex;
         private Point[] RecordValues;
 
-        public Communication()
+        private TobiTest test;
+        private GestureType recordType;
+
+        public Communication(int offset, int genauigkeit)
         {
             myChronos = new Chronos();
             values = new Point[arraySize];
             values2 = new Point[arraySize];
             RecordValues = new Point[arraySize];
-            for (int i=0; i<arraySize; i++)
+            for (int i = 0; i < arraySize; i++)
             {
                 values[i] = new Point(0, 0, 0);
                 RecordValues[i] = values[i];
@@ -55,7 +58,16 @@ namespace ChronosGestenerkennung.Com
             //A new Algorithm object
             algo = new Algo(gesture, definedGesture);
 
+
+            test = new TobiTest();
+
             record = false;
+        }
+
+        public Communication()
+            :this (0,100)
+        {
+    
         }
 
         public bool Connect()
@@ -123,6 +135,7 @@ namespace ChronosGestenerkennung.Com
             if (values2[valueIndex] == null)
             {
                 values2[valueIndex] = values[valueIndex];
+                return;
             }
             else
             {
@@ -132,13 +145,7 @@ namespace ChronosGestenerkennung.Com
                 }
                 values2[arraySize - 1] = values[valueIndex];
 
-                //string temp = "";
-                //foreach (Point p in values2)
-                //{
-                //    temp += p.X + ", ";
-                //}
-                //Console.WriteLine(temp);
-
+               // printValues(values2, 1);
             }
 
 
@@ -152,12 +159,23 @@ namespace ChronosGestenerkennung.Com
                 }
                 else
                 {
-                    record = false;
-                }
+                    printValues(RecordValues);
+                    test.SaveGestur(recordType, RecordValues);
+                    record = false; 
+               }
             }
             else
             {
-                TestGeste(0, 70);
+                
+                analysedGesture = test.Analytic(values2);
+                if (analysedGesture != GestureType.None)
+                {
+                    for (int i=0; i<arraySize; i++)
+                    {
+                        values2[i] = new Point(0, 0, 0);
+                    }
+                }
+               // TestGeste(0, 70);
             }
             
             valueIndex++;
@@ -169,6 +187,15 @@ namespace ChronosGestenerkennung.Com
            if (temp != GestureType.None)
                analysedGesture = temp;
         }
+
+
+
+
+
+
+
+
+
 
         // Test geste
         private void TestGeste(int offset, int genauigkeit)
@@ -182,9 +209,10 @@ namespace ChronosGestenerkennung.Com
                     countTreffer++;
                 }
             }
-            Console.WriteLine("Treffer: " + countTreffer + ", => " +(countTreffer / arraySize) * 100);
+            double p = (double) countTreffer / (double)arraySize *100;
+            Console.WriteLine("Treffer: " + countTreffer + ", => " + p);
 
-            if ((countTreffer / arraySize) * 100 >= genauigkeit)
+            if (p >= genauigkeit)
             {
                 analysedGesture = GestureType.Push;
                
@@ -208,10 +236,52 @@ namespace ChronosGestenerkennung.Com
 
         //Confog
 
-        public void StartRecord()
+        public void StartRecord(GestureType type)
         {
             record = true;
+            recordType = type;
             recordIndex = 0;
         }
+
+        //Console
+
+        private void printValues(Point[] points)
+        {
+            for (int i = 1; i <= 3; i++)
+                printValues(points, i); 
+        }
+
+        private void printValues(Point[] points, int i)
+        {
+             string temp = "";
+             switch (i)
+             {
+                 case 1:
+                     temp = "X: =>";
+                     foreach (Point p in points)
+                     {
+                         temp += p.X + ", ";
+                     }
+                     break;
+                 case 2:
+                     temp = "Y: =>";
+                     foreach (Point p in points)
+                     {
+                         temp += p.Y + ", ";
+                     }
+                     break;
+                 case 3:
+                     temp = "Z: =>";
+                     foreach (Point p in points)
+                     {
+                         temp += p.Z + ", ";
+                     }
+                     break;
+
+             }
+            Console.WriteLine(temp);
+        }
+
+
     }
 }
