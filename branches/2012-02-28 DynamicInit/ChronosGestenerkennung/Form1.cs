@@ -70,23 +70,5 @@ namespace ChronosGestenerkennung
             timer1.Enabled = !timer1.Enabled;
         }
 
-        //private void buttonConfigPush_Click(object sender, EventArgs e)
-        //{
-        //    chronosCom.StartRecord(GestureType.Push);
-        //    Console.WriteLine("StartConfigPush");
-        //}
-
-        //private void buttonConfigUp_Click(object sender, EventArgs e)
-        //{
-        //    chronosCom.StartRecord(GestureType.Up);
-        //    Console.WriteLine("StartConfigUp");
-        //}
-
-     
-
-      
-
-
-
     }
 }
