@@ -8,14 +8,14 @@ namespace ChronosGestenerkennung.Gestures
     class AlgoNew
     {
         private readonly int arraySize;
-        private int MedianDiffValue { get { return 10; } }
+        private int MedianDiffValue { get { return 30; } }
         CalcValues valueX;
         CalcValues valueY;
         CalcValues valueZ;
 
         public AlgoNew()
         {
-            arraySize = 30;
+            arraySize = 40;
             valueX = new CalcValues(arraySize);
             valueY = new CalcValues(arraySize);
             valueZ = new CalcValues(arraySize);
@@ -40,33 +40,28 @@ namespace ChronosGestenerkennung.Gestures
             if (isPush())
             {
                 Console.WriteLine("Push!!");
-                ResetValues();
                 return GestureType.Push;
             }
 
             if (isUp())
             {
                 Console.WriteLine("UP!!!");
-                ResetValues();
                 return GestureType.Up;
             }
 
             if (isDown())
             {
                 Console.WriteLine("Down!!!");
-                ResetValues();
                 return GestureType.Down;
             }
             if (isLeft())
             {
                 Console.WriteLine("Left!!!");
-                ResetValues();
                 return GestureType.Left;
             }
             if (isRight())
             {
                 Console.WriteLine("Right!!!");
-                ResetValues();
                 return GestureType.Right;
             }
 
@@ -78,7 +73,7 @@ namespace ChronosGestenerkennung.Gestures
             if (valueX.CalculateDifference() < 90 && valueY.CalculateDifference() < 90 && valueZ.CalculateDifference() > 100)
             {
                 //Min und Max jeweils weit genug von Median entfernt?
-                Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax() + "median-min: " + (valueZ.CalculateMedian() - valueZ.CalculateMin())));
+                Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax() + "median-min: " + (valueZ.CalculateMedian() - valueZ.CalculateMin()))+ "UP: "+ valueZ.IsDirectionUp());
                 if ((valueZ.CalculateMedian() - valueZ.CalculateMin()) > MedianDiffValue && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
                 {
                     return !valueZ.IsDirectionUp(); //erst Max, dann Min
@@ -103,7 +98,7 @@ namespace ChronosGestenerkennung.Gestures
 
         private bool isPush()
         {
-            if (valueX.CalculateDifference() < 90 && valueY.CalculateDifference() > 120 && valueZ.CalculateDifference() < 90)
+            if (valueX.CalculateDifference() < 120 && valueY.CalculateDifference() > 120 && valueZ.CalculateDifference() < 120)
             {
                 return valueY.IsDirectionUp();
             }
@@ -113,7 +108,11 @@ namespace ChronosGestenerkennung.Gestures
         {
             if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 90 && valueZ.CalculateDifference() < 90)
             {
-                return !valueX.IsDirectionUp();
+                if ((valueX.CalculateMedian() - valueX.CalculateMin()) > MedianDiffValue && valueX.CalculateMax() - valueX.CalculateMedian() > MedianDiffValue)
+                {
+
+                    return !valueX.IsDirectionUp();
+                }
             }
             return false;
         }
@@ -122,7 +121,11 @@ namespace ChronosGestenerkennung.Gestures
         {
             if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 90 && valueZ.CalculateDifference() < 90)
             {
-                return valueX.IsDirectionUp();
+                if ((valueX.CalculateMedian() - valueX.CalculateMin()) > MedianDiffValue && valueX.CalculateMax() - valueX.CalculateMedian() > MedianDiffValue)
+                {
+
+                    return valueX.IsDirectionUp();
+                }
             }
             return false;
         }
