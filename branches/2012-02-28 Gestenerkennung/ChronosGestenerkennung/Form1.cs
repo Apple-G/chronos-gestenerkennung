@@ -15,6 +15,7 @@ namespace ChronosGestenerkennung
     {
         private ChronosCommunication chronosCom;
         private AlgoNew algoGesture;
+        private int timerGesture;
 
         public Form1()
         {
@@ -60,7 +61,14 @@ namespace ChronosGestenerkennung
             labelY.Text = "Y: " + chronosCom.GetY();
             labelZ.Text = "Z: " + chronosCom.GetZ();
 
-            labelGesture.Text = "Analyzed Gesture: " + algoGesture.getGesture();
+            GestureType tempGesture = algoGesture.getGesture();
+
+            if (tempGesture != GestureType.None ||timerGesture > 40)
+            {
+                timerGesture = 0;
+                labelGesture.Text = "Analyzed Gesture: " + tempGesture;
+            }
+            timerGesture++;
         }
 
      

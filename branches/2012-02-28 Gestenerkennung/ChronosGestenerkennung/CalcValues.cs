@@ -104,6 +104,16 @@ namespace ChronosGestenerkennung
             return (GetIndex(CalculateMax(start, end)) > GetIndex(CalculateMin(start, end)));
         }
 
+        public bool IsDirectionDown()
+        {
+            return IsDirectionDown(0, arraySize);
+        }
+
+        public bool IsDirectionDown(int start, int end)
+        {
+            return (GetIndex(CalculateMax(start, end)) < GetIndex(CalculateMin(start, end)));
+        }
+
         public int GetIndex(int value)
         {
             for (int i = 0; i < arraySize; i++)
@@ -120,7 +130,7 @@ namespace ChronosGestenerkennung
 
             for (int i = 0; i < arraySize; i++)
             {
-                tempArray = values;
+                tempArray[i] = values[i];
             }
 
             Array.Sort(tempArray);
