@@ -56,22 +56,27 @@ namespace ChronosGestenerkennung
         {
             chronosCom.UpdateValues();
             algoGesture.UpdateValues(chronosCom.GetX(), chronosCom.GetY(), chronosCom.GetZ());
-            labelRaw.Text = "Raw Value: " + chronosCom.Data.ToString("X");
-            labelX.Text = "X: " + chronosCom.GetX();
-            labelY.Text = "Y: " + chronosCom.GetY();
-            labelZ.Text = "Z: " + chronosCom.GetZ();
 
-            GestureType tempGesture = algoGesture.getGesture();
 
-            if (tempGesture != GestureType.None ||timerGesture > 40)
+            //set Gesture
+
+            GestureType tempGesture = algoGesture.AnalyticGesture();
+
+            if (tempGesture != GestureType.None || timerGesture > 40)
             {
                 timerGesture = 0;
                 labelGesture.Text = "Analyzed Gesture: " + tempGesture;
             }
+
             timerGesture++;
+
+            labelRaw.Text = "Raw Value: " + chronosCom.Data.ToString("X");
+            labelX.Text = "X: " + chronosCom.GetX();
+            labelY.Text = "Y: " + chronosCom.GetY();
+            labelZ.Text = "Z: " + chronosCom.GetZ();
         }
 
-     
+
 
         private void buttonTimer_Click(object sender, EventArgs e)
         {
