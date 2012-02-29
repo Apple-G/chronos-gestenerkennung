@@ -34,9 +34,14 @@ namespace ChronosGestenerkennung
 
         public void Reset()
         {
+            Reset(0);
+        }
+
+        public void Reset(int value)
+        {
             for (int i = 0; i < arraySize; i++)
             {
-                values[i] = 0;
+                values[i] = value;
             }
             valueIndex = 0;
         }

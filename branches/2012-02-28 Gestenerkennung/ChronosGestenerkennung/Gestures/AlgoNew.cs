@@ -9,9 +9,12 @@ namespace ChronosGestenerkennung.Gestures
     {
         private readonly int arraySize;
         private int MedianDiffValue { get { return 30; } }
-        CalcValues valueX;
-        CalcValues valueY;
-        CalcValues valueZ;
+        private CalcValues valueX;
+        private CalcValues valueY;
+        private CalcValues valueZ;
+
+        private GestureType oldGesture;
+        private int countGesture;
 
         public AlgoNew()
         {
@@ -19,6 +22,7 @@ namespace ChronosGestenerkennung.Gestures
             valueX = new CalcValues(arraySize);
             valueY = new CalcValues(arraySize);
             valueZ = new CalcValues(arraySize);
+            oldGesture = GestureType.None;
         }
 
         public void UpdateValues(int x, int y, int z)
@@ -28,14 +32,36 @@ namespace ChronosGestenerkennung.Gestures
             valueZ.Values = z;
         }
 
-        public void ResetValues()
+        public void ResetValues(int x, int y, int z)
         {
-            valueX.Reset();
-            valueY.Reset();
-            valueZ.Reset();
+            valueX.Reset(x);
+            valueY.Reset(y);
+            valueZ.Reset(z);
+        }
+        public GestureType AnalyticGesture()
+        {
+            GestureType tempGesture = oldGesture;
+            oldGesture = GetGesture();
+
+            if (tempGesture == oldGesture)
+            {
+                countGesture++;
+                if (countGesture > 5)
+                {
+                    countGesture = 0;
+                    ResetValues(valueX.CalculateMedian(), valueY.CalculateMedian(), valueZ.CalculateMedian());
+                    return tempGesture;
+                }
+            }
+            else
+            {
+                countGesture = 0;
+            }
+            return GestureType.None;
+
         }
 
-        public GestureType getGesture()
+        private GestureType GetGesture()
         {
             if (isPush())
             {
@@ -73,7 +99,7 @@ namespace ChronosGestenerkennung.Gestures
             if (valueX.CalculateDifference() < 90 && valueY.CalculateDifference() < 90 && valueZ.CalculateDifference() > 100)
             {
                 //Min und Max jeweils weit genug von Median entfernt?
-                Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax() + "median-min: " + (valueZ.CalculateMedian() - valueZ.CalculateMin()))+ "UP: "+ valueZ.IsDirectionUp());
+                Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax() + "median-min: " + (valueZ.CalculateMedian() - valueZ.CalculateMin())) + "UP: " + valueZ.IsDirectionUp());
                 if ((valueZ.CalculateMedian() - valueZ.CalculateMin()) > MedianDiffValue && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
                 {
                     return !valueZ.IsDirectionUp(); //erst Max, dann Min
@@ -129,7 +155,7 @@ namespace ChronosGestenerkennung.Gestures
             }
             return false;
         }
-        
+
 
     }
 }
