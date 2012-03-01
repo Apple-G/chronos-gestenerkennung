@@ -44,7 +44,7 @@ namespace ChronosGestenerkennung.Gestures
             oldGesture = GetGesture();
 
             if (tempGesture == oldGesture)
-            {
+        {
                 countGesture++;
                 if (countGesture > 5)
                 {
@@ -63,6 +63,16 @@ namespace ChronosGestenerkennung.Gestures
 
         private GestureType GetGesture()
         {
+            //if (isWave())
+            //{
+            //    Console.WriteLine("Wave!!");
+            //    return GestureType.Wave;
+            //}
+            //if (isCircle())
+            //{
+            //    Console.WriteLine("Circle!!");
+            //    return GestureType.Circle;
+            //}
             if (isPush())
             {
                 Console.WriteLine("Push!!");
@@ -91,16 +101,28 @@ namespace ChronosGestenerkennung.Gestures
                 return GestureType.Right;
             }
 
+
             return GestureType.None;
+        }
+
+        private bool isWave()
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool isCircle()
+        {
+            throw new NotImplementedException();
         }
 
         private bool isUp()
         {
-            if (valueX.CalculateDifference() < 90 && valueY.CalculateDifference() < 90 && valueZ.CalculateDifference() > 100)
+            if (valueX.CalculateDifference() < 90 && valueY.CalculateDifference() < 90
+                && valueZ.CalculateDifference() > 100)
             {
                 //Min und Max jeweils weit genug von Median entfernt?
-                Console.WriteLine(("Median: " + valueZ.CalculateMedian() + " Min: " + valueZ.CalculateMin() + " Max: " + valueZ.CalculateMax() + "median-min: " + (valueZ.CalculateMedian() - valueZ.CalculateMin())) + "UP: " + valueZ.IsDirectionUp());
-                if ((valueZ.CalculateMedian() - valueZ.CalculateMin()) > MedianDiffValue && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
+                if ((valueZ.CalculateMedian() - valueZ.CalculateMin()) > MedianDiffValue
+                    && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
                 {
                     return !valueZ.IsDirectionUp(); //erst Max, dann Min
                 }
@@ -110,10 +132,12 @@ namespace ChronosGestenerkennung.Gestures
         }
         private bool isDown()
         {
-            if (valueX.CalculateDifference() < 90 && valueY.CalculateDifference() < 90 && valueZ.CalculateDifference() > 140)
+            if (valueX.CalculateDifference() < 90 && valueY.CalculateDifference() < 90
+                && valueZ.CalculateDifference() > 140)
             {
                 //Min und Max jeweils weit genug von Median entfernt?
-                if (valueZ.CalculateMedian() - valueZ.CalculateMin() > MedianDiffValue && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
+                if (valueZ.CalculateMedian() - valueZ.CalculateMin() > MedianDiffValue
+                    && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
                 {
                     return valueZ.IsDirectionUp(); //erst Max, dann Min
                 }
@@ -124,7 +148,8 @@ namespace ChronosGestenerkennung.Gestures
 
         private bool isPush()
         {
-            if (valueX.CalculateDifference() < 120 && valueY.CalculateDifference() > 120 && valueZ.CalculateDifference() < 120)
+            if (valueX.CalculateDifference() < 120 && valueY.CalculateDifference() > 120
+                && valueZ.CalculateDifference() < 120)
             {
                 return valueY.IsDirectionUp();
             }
@@ -132,9 +157,11 @@ namespace ChronosGestenerkennung.Gestures
         }
         private bool isLeft()
         {
-            if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 90 && valueZ.CalculateDifference() < 90)
+            if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 90
+                && valueZ.CalculateDifference() < 90)
             {
-                if ((valueX.CalculateMedian() - valueX.CalculateMin()) > MedianDiffValue && valueX.CalculateMax() - valueX.CalculateMedian() > MedianDiffValue)
+                if ((valueX.CalculateMedian() - valueX.CalculateMin()) > MedianDiffValue
+                    && valueX.CalculateMax() - valueX.CalculateMedian() > MedianDiffValue)
                 {
 
                     return !valueX.IsDirectionUp();
@@ -145,9 +172,11 @@ namespace ChronosGestenerkennung.Gestures
 
         private bool isRight()
         {
-            if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 90 && valueZ.CalculateDifference() < 90)
+            if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 90
+                && valueZ.CalculateDifference() < 90)
             {
-                if ((valueX.CalculateMedian() - valueX.CalculateMin()) > MedianDiffValue && valueX.CalculateMax() - valueX.CalculateMedian() > MedianDiffValue)
+                if ((valueX.CalculateMedian() - valueX.CalculateMin()) > MedianDiffValue
+                    && valueX.CalculateMax() - valueX.CalculateMedian() > MedianDiffValue)
                 {
 
                     return valueX.IsDirectionUp();
