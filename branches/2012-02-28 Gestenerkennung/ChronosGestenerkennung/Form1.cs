@@ -13,12 +13,15 @@ namespace ChronosGestenerkennung
 {
     public partial class Form1 : Form
     {
+
+        private bool UseAlgo1;
         private ChronosCommunication chronosCom;
         private AlgoNew algoGesture;
         private int timerGesture;
 
         public Form1()
         {
+            UseAlgo1 = true;
             chronosCom = new ChronosCommunication();
             algoGesture = new AlgoNew();
             InitializeComponent();
@@ -55,12 +58,20 @@ namespace ChronosGestenerkennung
         void Timer1_Tick(object sender, EventArgs e)
         {
             chronosCom.UpdateValues();
-            algoGesture.UpdateValues(chronosCom.GetX(), chronosCom.GetY(), chronosCom.GetZ());
+            GestureType tempGesture = GestureType.None;
 
 
-            //set Gesture
-
-            GestureType tempGesture = algoGesture.AnalyseGesture();
+            //Algo 1
+            if (UseAlgo1)
+            {
+                algoGesture.UpdateValues(chronosCom.GetX(), chronosCom.GetY(), chronosCom.GetZ());
+                tempGesture = algoGesture.AnalyseGesture();
+            }
+            //Algo 2
+            else
+            {
+                //ToDo
+            }
 
             if (tempGesture != GestureType.None || timerGesture > 40)
             {
@@ -82,6 +93,26 @@ namespace ChronosGestenerkennung
         {
             timer1.Enabled = !timer1.Enabled;
         }
+
+        private void radioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton temp = (RadioButton)sender;
+
+            if (temp.Name == "radioButtonAlgo2" && temp.Checked)
+            {
+                Console.WriteLine("radioButtonAlgo2 checked");
+                UseAlgo1 = false;
+
+            }
+            else if (temp.Name == "radioButtonAlgo1" && temp.Checked)
+            {
+
+                Console.WriteLine("radioButtonAlgo1 checked");
+                UseAlgo1 = true;
+            }
+
+        }     
+        
 
     }
 }
