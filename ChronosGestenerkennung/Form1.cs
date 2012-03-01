@@ -60,7 +60,7 @@ namespace ChronosGestenerkennung
 
             //set Gesture
 
-            GestureType tempGesture = algoGesture.AnalyticGesture();
+            GestureType tempGesture = algoGesture.AnalyseGesture();
 
             if (tempGesture != GestureType.None || timerGesture > 40)
             {
