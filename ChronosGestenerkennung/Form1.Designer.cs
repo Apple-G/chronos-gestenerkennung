@@ -29,15 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.buttonConnect = new System.Windows.Forms.Button();
-            this.labelStatus = new System.Windows.Forms.Label();
-            this.labelStatusText = new System.Windows.Forms.Label();
-            this.labelX = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.labelZ = new System.Windows.Forms.Label();
-            this.labelY = new System.Windows.Forms.Label();
-            this.labelRaw = new System.Windows.Forms.Label();
-            this.labelGesture = new System.Windows.Forms.Label();
             this.buttonTimer = new System.Windows.Forms.Button();
             this.groupBoxConfig = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,86 +44,27 @@
             this.textBoxY = new System.Windows.Forms.TextBox();
             this.textBoxX = new System.Windows.Forms.TextBox();
             this.textBoxZ = new System.Windows.Forms.TextBox();
+            this.groupBoxSelect = new System.Windows.Forms.GroupBox();
+            this.radioButtonAlgo2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonAlgo1 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelGesture = new System.Windows.Forms.Label();
+            this.labelRaw = new System.Windows.Forms.Label();
+            this.labelY = new System.Windows.Forms.Label();
+            this.labelZ = new System.Windows.Forms.Label();
+            this.labelX = new System.Windows.Forms.Label();
+            this.labelStatusText = new System.Windows.Forms.Label();
+            this.labelStatus = new System.Windows.Forms.Label();
+            this.buttonConnect = new System.Windows.Forms.Button();
             this.groupBoxConfig.SuspendLayout();
+            this.groupBoxSelect.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonConnect
-            // 
-            this.buttonConnect.Location = new System.Drawing.Point(12, 12);
-            this.buttonConnect.Name = "buttonConnect";
-            this.buttonConnect.Size = new System.Drawing.Size(95, 34);
-            this.buttonConnect.TabIndex = 0;
-            this.buttonConnect.Text = "Connect";
-            this.buttonConnect.UseVisualStyleBackColor = true;
-            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
-            // 
-            // labelStatus
-            // 
-            this.labelStatus.AutoSize = true;
-            this.labelStatus.Location = new System.Drawing.Point(210, 23);
-            this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(0, 13);
-            this.labelStatus.TabIndex = 1;
-            // 
-            // labelStatusText
-            // 
-            this.labelStatusText.AutoSize = true;
-            this.labelStatusText.Location = new System.Drawing.Point(113, 23);
-            this.labelStatusText.Name = "labelStatusText";
-            this.labelStatusText.Size = new System.Drawing.Size(91, 13);
-            this.labelStatusText.TabIndex = 2;
-            this.labelStatusText.Text = "Connectin Status:";
-            // 
-            // labelX
-            // 
-            this.labelX.AutoSize = true;
-            this.labelX.Location = new System.Drawing.Point(9, 63);
-            this.labelX.Name = "labelX";
-            this.labelX.Size = new System.Drawing.Size(20, 13);
-            this.labelX.TabIndex = 4;
-            this.labelX.Text = "X: ";
             // 
             // timer1
             // 
             this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
-            // labelZ
-            // 
-            this.labelZ.AutoSize = true;
-            this.labelZ.Location = new System.Drawing.Point(9, 109);
-            this.labelZ.Name = "labelZ";
-            this.labelZ.Size = new System.Drawing.Size(17, 13);
-            this.labelZ.TabIndex = 5;
-            this.labelZ.Text = "Z:";
-            // 
-            // labelY
-            // 
-            this.labelY.AutoSize = true;
-            this.labelY.Location = new System.Drawing.Point(9, 86);
-            this.labelY.Name = "labelY";
-            this.labelY.Size = new System.Drawing.Size(20, 13);
-            this.labelY.TabIndex = 6;
-            this.labelY.Text = "Y: ";
-            // 
-            // labelRaw
-            // 
-            this.labelRaw.AutoSize = true;
-            this.labelRaw.Location = new System.Drawing.Point(113, 54);
-            this.labelRaw.Name = "labelRaw";
-            this.labelRaw.Size = new System.Drawing.Size(62, 13);
-            this.labelRaw.TabIndex = 7;
-            this.labelRaw.Text = "Raw Value:";
-            // 
-            // labelGesture
-            // 
-            this.labelGesture.AutoSize = true;
-            this.labelGesture.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGesture.Location = new System.Drawing.Point(113, 86);
-            this.labelGesture.Name = "labelGesture";
-            this.labelGesture.Size = new System.Drawing.Size(86, 24);
-            this.labelGesture.TabIndex = 8;
-            this.labelGesture.Text = "Gesture: ";
             // 
             // buttonTimer
             // 
@@ -158,12 +91,13 @@
             this.groupBoxConfig.Controls.Add(this.textBoxY);
             this.groupBoxConfig.Controls.Add(this.textBoxX);
             this.groupBoxConfig.Controls.Add(this.textBoxZ);
-            this.groupBoxConfig.Location = new System.Drawing.Point(12, 165);
+            this.groupBoxConfig.Location = new System.Drawing.Point(12, 223);
             this.groupBoxConfig.Name = "groupBoxConfig";
-            this.groupBoxConfig.Size = new System.Drawing.Size(333, 144);
+            this.groupBoxConfig.Size = new System.Drawing.Size(360, 144);
             this.groupBoxConfig.TabIndex = 20;
             this.groupBoxConfig.TabStop = false;
             this.groupBoxConfig.Text = "Config";
+            this.groupBoxConfig.Visible = false;
             // 
             // label3
             // 
@@ -267,40 +201,155 @@
             this.textBoxZ.Size = new System.Drawing.Size(108, 20);
             this.textBoxZ.TabIndex = 20;
             // 
+            // groupBoxSelect
+            // 
+            this.groupBoxSelect.Controls.Add(this.radioButtonAlgo2);
+            this.groupBoxSelect.Controls.Add(this.radioButtonAlgo1);
+            this.groupBoxSelect.Location = new System.Drawing.Point(12, 151);
+            this.groupBoxSelect.Name = "groupBoxSelect";
+            this.groupBoxSelect.Size = new System.Drawing.Size(360, 66);
+            this.groupBoxSelect.TabIndex = 22;
+            this.groupBoxSelect.TabStop = false;
+            this.groupBoxSelect.Text = "select algorithm";
+            // 
+            // radioButtonAlgo2
+            // 
+            this.radioButtonAlgo2.AutoSize = true;
+            this.radioButtonAlgo2.Location = new System.Drawing.Point(6, 42);
+            this.radioButtonAlgo2.Name = "radioButtonAlgo2";
+            this.radioButtonAlgo2.Size = new System.Drawing.Size(52, 17);
+            this.radioButtonAlgo2.TabIndex = 23;
+            this.radioButtonAlgo2.Text = "Algo2";
+            this.radioButtonAlgo2.UseVisualStyleBackColor = true;
+            this.radioButtonAlgo2.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            // 
+            // radioButtonAlgo1
+            // 
+            this.radioButtonAlgo1.AutoSize = true;
+            this.radioButtonAlgo1.Checked = true;
+            this.radioButtonAlgo1.Location = new System.Drawing.Point(6, 19);
+            this.radioButtonAlgo1.Name = "radioButtonAlgo1";
+            this.radioButtonAlgo1.Size = new System.Drawing.Size(52, 17);
+            this.radioButtonAlgo1.TabIndex = 22;
+            this.radioButtonAlgo1.TabStop = true;
+            this.radioButtonAlgo1.Text = "Algo1";
+            this.radioButtonAlgo1.UseVisualStyleBackColor = true;
+            this.radioButtonAlgo1.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.labelGesture);
+            this.groupBox1.Controls.Add(this.labelRaw);
+            this.groupBox1.Controls.Add(this.labelY);
+            this.groupBox1.Controls.Add(this.labelZ);
+            this.groupBox1.Controls.Add(this.labelX);
+            this.groupBox1.Controls.Add(this.labelStatusText);
+            this.groupBox1.Controls.Add(this.labelStatus);
+            this.groupBox1.Controls.Add(this.buttonConnect);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(360, 133);
+            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabStop = false;
+            // 
+            // labelGesture
+            // 
+            this.labelGesture.AutoSize = true;
+            this.labelGesture.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGesture.Location = new System.Drawing.Point(107, 93);
+            this.labelGesture.Name = "labelGesture";
+            this.labelGesture.Size = new System.Drawing.Size(169, 24);
+            this.labelGesture.TabIndex = 16;
+            this.labelGesture.Text = "Analyzed Gesture: ";
+            // 
+            // labelRaw
+            // 
+            this.labelRaw.AutoSize = true;
+            this.labelRaw.Location = new System.Drawing.Point(107, 61);
+            this.labelRaw.Name = "labelRaw";
+            this.labelRaw.Size = new System.Drawing.Size(62, 13);
+            this.labelRaw.TabIndex = 15;
+            this.labelRaw.Text = "Raw Value:";
+            // 
+            // labelY
+            // 
+            this.labelY.AutoSize = true;
+            this.labelY.Location = new System.Drawing.Point(6, 84);
+            this.labelY.Name = "labelY";
+            this.labelY.Size = new System.Drawing.Size(20, 13);
+            this.labelY.TabIndex = 14;
+            this.labelY.Text = "Y: ";
+            // 
+            // labelZ
+            // 
+            this.labelZ.AutoSize = true;
+            this.labelZ.Location = new System.Drawing.Point(6, 107);
+            this.labelZ.Name = "labelZ";
+            this.labelZ.Size = new System.Drawing.Size(17, 13);
+            this.labelZ.TabIndex = 13;
+            this.labelZ.Text = "Z:";
+            // 
+            // labelX
+            // 
+            this.labelX.AutoSize = true;
+            this.labelX.Location = new System.Drawing.Point(6, 61);
+            this.labelX.Name = "labelX";
+            this.labelX.Size = new System.Drawing.Size(20, 13);
+            this.labelX.TabIndex = 12;
+            this.labelX.Text = "X: ";
+            // 
+            // labelStatusText
+            // 
+            this.labelStatusText.AutoSize = true;
+            this.labelStatusText.Location = new System.Drawing.Point(107, 30);
+            this.labelStatusText.Name = "labelStatusText";
+            this.labelStatusText.Size = new System.Drawing.Size(97, 13);
+            this.labelStatusText.TabIndex = 11;
+            this.labelStatusText.Text = "Connection Status:";
+            // 
+            // labelStatus
+            // 
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.Location = new System.Drawing.Point(204, 30);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(0, 13);
+            this.labelStatus.TabIndex = 10;
+            // 
+            // buttonConnect
+            // 
+            this.buttonConnect.Location = new System.Drawing.Point(6, 19);
+            this.buttonConnect.Name = "buttonConnect";
+            this.buttonConnect.Size = new System.Drawing.Size(95, 34);
+            this.buttonConnect.TabIndex = 9;
+            this.buttonConnect.Text = "Connect";
+            this.buttonConnect.UseVisualStyleBackColor = true;
+            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 321);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(701, 450);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxSelect);
             this.Controls.Add(this.groupBoxConfig);
-            this.Controls.Add(this.labelGesture);
-            this.Controls.Add(this.labelRaw);
-            this.Controls.Add(this.labelY);
-            this.Controls.Add(this.labelZ);
-            this.Controls.Add(this.labelX);
-            this.Controls.Add(this.labelStatusText);
-            this.Controls.Add(this.labelStatus);
-            this.Controls.Add(this.buttonConnect);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBoxConfig.ResumeLayout(false);
             this.groupBoxConfig.PerformLayout();
+            this.groupBoxSelect.ResumeLayout(false);
+            this.groupBoxSelect.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonConnect;
-        private System.Windows.Forms.Label labelStatus;
-        private System.Windows.Forms.Label labelStatusText;
-        private System.Windows.Forms.Label labelX;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label labelZ;
-        private System.Windows.Forms.Label labelY;
-        private System.Windows.Forms.Label labelRaw;
-        private System.Windows.Forms.Label labelGesture;
         private System.Windows.Forms.Button buttonTimer;
         private System.Windows.Forms.GroupBox groupBoxConfig;
         private System.Windows.Forms.Button buttonSave;
@@ -315,6 +364,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBoxSelect;
+        private System.Windows.Forms.RadioButton radioButtonAlgo1;
+        private System.Windows.Forms.RadioButton radioButtonAlgo2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label labelGesture;
+        private System.Windows.Forms.Label labelRaw;
+        private System.Windows.Forms.Label labelY;
+        private System.Windows.Forms.Label labelZ;
+        private System.Windows.Forms.Label labelX;
+        private System.Windows.Forms.Label labelStatusText;
+        private System.Windows.Forms.Label labelStatus;
+        private System.Windows.Forms.Button buttonConnect;
     }
 }
 
