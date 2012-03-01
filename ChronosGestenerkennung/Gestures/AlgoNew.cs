@@ -38,7 +38,7 @@ namespace ChronosGestenerkennung.Gestures
             valueY.Reset(y);
             valueZ.Reset(z);
         }
-        public GestureType AnalyticGesture()
+        public GestureType AnalyseGesture()
         {
             GestureType tempGesture = oldGesture;
             oldGesture = GetGesture();
@@ -132,6 +132,7 @@ namespace ChronosGestenerkennung.Gestures
         }
         private bool isDown()
         {
+            //X,Y,Z Auschlag im gewuenschten Bereich
             if (valueX.CalculateDifference() < 90 && valueY.CalculateDifference() < 90
                 && valueZ.CalculateDifference() > 140)
             {
@@ -139,7 +140,7 @@ namespace ChronosGestenerkennung.Gestures
                 if (valueZ.CalculateMedian() - valueZ.CalculateMin() > MedianDiffValue
                     && valueZ.CalculateMax() - valueZ.CalculateMedian() > MedianDiffValue)
                 {
-                    return valueZ.IsDirectionUp(); //erst Max, dann Min
+                    return valueZ.IsDirectionUp(); //erst Min, dann Max
                 }
             }
 
@@ -157,8 +158,8 @@ namespace ChronosGestenerkennung.Gestures
         }
         private bool isLeft()
         {
-            if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 90
-                && valueZ.CalculateDifference() < 90)
+            if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 120
+                && valueZ.CalculateDifference() < 120)
             {
                 if ((valueX.CalculateMedian() - valueX.CalculateMin()) > MedianDiffValue
                     && valueX.CalculateMax() - valueX.CalculateMedian() > MedianDiffValue)
@@ -172,8 +173,8 @@ namespace ChronosGestenerkennung.Gestures
 
         private bool isRight()
         {
-            if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 90
-                && valueZ.CalculateDifference() < 90)
+            if (valueX.CalculateDifference() > 120 && valueY.CalculateDifference() < 120
+                && valueZ.CalculateDifference() < 120)
             {
                 if ((valueX.CalculateMedian() - valueX.CalculateMin()) > MedianDiffValue
                     && valueX.CalculateMax() - valueX.CalculateMedian() > MedianDiffValue)
