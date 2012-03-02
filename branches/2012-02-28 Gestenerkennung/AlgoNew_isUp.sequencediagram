@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="b5df201a-2663-46c7-92e7-bc3a694bf45b" name="AlgoNew_isUp" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="04d273e2-5942-425b-99ab-a11cb2a12e9a" name="AlgoNew_isUp" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="0100cba3-c810-46e1-9037-35fb630807c6" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="8d4c5c2b-6b8b-44bc-933e-53508319fdcb" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f6f0e1e0-c40d-4c37-9348-ad7503510129" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="ffde88b1-afb7-4cd5-a723-87abe89039c2" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="8da13ce0-49a9-4739-b0c3-0dd450c330cc" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="299ccf81-5570-4a0d-9505-f101b8a789bb" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="9ed3c62d-1b99-4b60-a896-ce03e47678f8" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="6e01fe75-d1f4-4d28-937a-f54be42c7713" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="8fe169df-fc6e-4ca8-8326-6a6e83bc6fde" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="355ebb53-4835-40d1-8d3e-14e62032f996" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="e330911e-1860-433f-a2e7-56768f7b3230" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="787735f1-b3af-42f9-bc67-1fbde7522486" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="499e6f1e-17e8-4bf2-9aae-0bff534802a5" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="2bdc4196-d868-489c-8844-45b3f4c80098" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a6899847-14d9-490d-b9cc-fb090fbcce08" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="39bd8e18-9145-4c7a-a2d4-16c96eb6fde5" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="8f3949ce-47bf-4aab-a1bf-ec05d81e915f" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="0920b78b-a80d-434f-a470-231e6621c407" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="f3f14066-7649-4a9f-828e-4178c8522112" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="388f7465-8f30-410f-a6a5-c8f5027e9cda" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="0eaf5ef3-5d99-4029-93d8-925eb265af10" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="3414fd37-dc11-4d1f-8a33-9704cf788425" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="b85ee7b7-018e-42f0-9744-82f2f93bb7b8" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f6f0e1e0-c40d-4c37-9348-ad7503510129" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="04a876f2-097d-4ea7-9516-5e79d7493104" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ffde88b1-afb7-4cd5-a723-87abe89039c2" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="2a631977-815e-4909-aed1-e83fed7d08b5" name="LostFoundTarget" />
+          <lostFoundTarget Id="1c834279-a76e-4664-948b-c6e7c90ae654" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="8da13ce0-49a9-4739-b0c3-0dd450c330cc" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="383cef26-89ff-4672-96f2-a1e1d8f0b655" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="299ccf81-5570-4a0d-9505-f101b8a789bb" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="9ed3c62d-1b99-4b60-a896-ce03e47678f8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="c0619b4a-bdac-4af6-be73-5c3ad5cf8718" name="LostFoundTarget" />
+          <combinedFragment Id="5630e193-6147-4bed-b1db-f5039983c657" name="CombinedFragment1" interactionOperator="Opt" customInteractionOperator="If">
+            <coveredLifelines>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="efd243b2-dca7-484d-849f-80f11324c40a" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="7eb1bcff-438f-4959-9364-fe2452cd64b3" name="CombinedFragment1" interactionOperator="Opt" customInteractionOperator="If">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="a9d9e617-7767-4104-8062-69747f8b6fce" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint Id="7e139c46-a952-496a-8aa3-08cddf4cadfc" guardText="if ((valueZ.CalculateMedian() - valueZ.CalculateMin()) &gt; MedianDiffValue &amp;&amp; valueZ.CalculateMax() - valueZ.CalculateMedian() &gt; MedianDiffValue)" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="f3f14066-7649-4a9f-828e-4178c8522112" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="3414fd37-dc11-4d1f-8a33-9704cf788425" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="e8c42298-2596-4015-92d1-b91b1433554c" guardText="if (valueX.CalculateDifference() &lt; 90 &amp;&amp; valueY.CalculateDifference() &lt; 90 &amp;&amp; valueZ.CalculateDifference() &gt; 100)" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="6e01fe75-d1f4-4d28-937a-f54be42c7713" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="b85ee7b7-018e-42f0-9744-82f2f93bb7b8" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="6e01fe75-d1f4-4d28-937a-f54be42c7713" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <lostFoundTarget Id="af2982db-e9a1-4527-8933-890e79c94017" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="8fe169df-fc6e-4ca8-8326-6a6e83bc6fde" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="1536ec84-a3f9-4f93-a2b2-4a42c7c33445" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="355ebb53-4835-40d1-8d3e-14e62032f996" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="8d86cfba-f395-46fd-acf0-a670423116b5" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="e330911e-1860-433f-a2e7-56768f7b3230" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="787735f1-b3af-42f9-bc67-1fbde7522486" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="247be390-aa93-4409-89e5-583e698cba2c" name="LostFoundTarget" />
+          <lostFoundTarget Id="522c64ec-c602-47ba-8f7d-fa432b68df97" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="499e6f1e-17e8-4bf2-9aae-0bff534802a5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2bdc4196-d868-489c-8844-45b3f4c80098" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="2bf722cf-2c1e-4bc8-a04a-757559bbab60" name="LostFoundTarget" />
+          <lostFoundTarget Id="2da5ae0f-776d-4562-b00d-ae7b4c086c5a" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="a6899847-14d9-490d-b9cc-fb090fbcce08" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="559bb8de-fdd2-4ff0-93eb-16d69fc42624" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="39bd8e18-9145-4c7a-a2d4-16c96eb6fde5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8f3949ce-47bf-4aab-a1bf-ec05d81e915f" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="96798143-990d-49a4-9d85-2c619f9a060b" name="LostFoundTarget" />
+          <lostFoundTarget Id="b375e69e-d09f-4db8-bd5a-89210fcaa8dc" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="0920b78b-a80d-434f-a470-231e6621c407" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="f3f14066-7649-4a9f-828e-4178c8522112" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <lostFoundTarget Id="c016dfa7-56bc-498b-82d3-cf6caca9678e" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="388f7465-8f30-410f-a6a5-c8f5027e9cda" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0eaf5ef3-5d99-4029-93d8-925eb265af10" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="3c81668a-7f4f-4602-87a2-0b851d198853" name="LostFoundTarget" />
+          <operandOccurrenceSpecification Id="3414fd37-dc11-4d1f-8a33-9704cf788425" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="b85ee7b7-018e-42f0-9744-82f2f93bb7b8" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="8d4c5c2b-6b8b-44bc-933e-53508319fdcb" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="89c2780e-1d0f-4b80-9ee1-c48a2d2c7e96" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" LastKnownName="this : AlgoNew" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="53052cce-16cd-4de2-a496-d3e87fbae3fd" name="this : AlgoNew" isActor="false" lifelineDisplayName="this : AlgoNew" referencedInstance="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew ObjectInstance=&quot;Object instance 1&quot;)" referencedType="ChronosGestenerkennung.Gestures.AlgoNew">
+            <referencesInternal>
+              <reference Id="21da2c7b-af6c-4215-8ca0-d70f1996c73a" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung.Gestures)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew)&quot;)" tag="DGQL" />
+              <reference Id="947e6a25-4597-4f1f-8955-41e9149e5dcc" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="f6f0e1e0-c40d-4c37-9348-ad7503510129" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="8d4c5c2b-6b8b-44bc-933e-53508319fdcb" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="d58f8134-8926-41e2-9390-20cdf566dbb1" name="isUp" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="ac440be8-dc2a-4b3f-8982-307ee2215b9a" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung.Gestures)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=isUp)&quot;)" tag="DGQL" />
+              <reference Id="387f3a0f-279f-4f7f-bb7a-c5a13d302390" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=isUp)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <lostFoundTargetMoniker Id="2a631977-815e-4909-aed1-e83fed7d08b5" LastKnownName="LostFoundTarget" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="ffde88b1-afb7-4cd5-a723-87abe89039c2" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="01e92b75-41f0-4254-af85-6788ec8d1818" name="CalculateDifference" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="cfa1fa3d-d857-44f0-85ea-72ec880cf22c" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateDifference)&quot;)" tag="DGQL" />
+              <reference Id="664c710c-99c4-44e3-adf0-65336b8827a9" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateDifference)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31e/8ad2ge3Zsv6J0Z/fzRDL8PhJ+dGfbnUyRzSrQyM9d0Zg4tAAmzXtNnZgZPdEZf09tznsfs1/j96dOSfmJmAeM5/Q7alfxGq/I+DvgE7c7o02PGfUk9LOjnmj7BO8+4JWb9I9YZZ3ZeljzyH+mM94Pws8NRP9IZ/3+f4f/36YwvqZWZga5WMP3tKVboacW4ZIxP2IevY0QXfZt+z+gNvw+0fENvr7kddJHxW8Dtd/mTuz1M5NOupyOf3tZT+n8CAAD//9GxBXxUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueX ObjectInstance="Object instance 2")
+this.valueX : CalcValues
+valueX.CalculateDifference()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="8da13ce0-49a9-4739-b0c3-0dd450c330cc" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="1c834279-a76e-4664-948b-c6e7c90ae654" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="1da62f34-e1d1-476b-b991-7bad9738c101" name="CalculateDifference" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="85418f95-db80-4859-9d1c-a34b2e36f77b" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateDifference)&quot;)" tag="DGQL" />
+              <reference Id="c268afc8-c48e-4113-bdd4-d0ae073460fd" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateDifference)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31+/wad2ge3Zsv6J0Z/fzRDL8PhJ+dGfbnUyRzSrQyM9d0Zg4tAAmzXtNnZgZPdEZf09tznsfs1/j96dOSfmJmAeM5/Q7alfxGq/I+DvgE7c7o02PGfUk9LOjnmj7BO8+4JWb9I9YZZ3ZeljzyH+mM94Pws8NRP9IZ/3+f4f/36YwvqZWZga5WMP3dV6zQ04pxyRifsA9fx4gu+jb9ntEbfh9o+YbeXnM76CLjt4Db7/Ind3uYyKddT0c+va2n9P8EAAD//zt3v+VUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueY ObjectInstance="Object instance 5")
+this.valueY : CalcValues
+valueY.CalculateDifference()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="299ccf81-5570-4a0d-9505-f101b8a789bb" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="383cef26-89ff-4672-96f2-a1e1d8f0b655" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="f420bba5-88f4-4191-bb3b-052f1ef81be9" name="CalculateDifference" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="7d2df9a2-2afc-47ba-9346-763aa3c80226" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateDifference)&quot;)" tag="DGQL" />
+              <reference Id="693e0f05-45fc-4497-855a-2aabe745e425" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateDifference)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateDifference()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="9ed3c62d-1b99-4b60-a896-ce03e47678f8" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="c0619b4a-bdac-4af6-be73-5c3ad5cf8718" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="f4474337-9dc5-4062-ae3e-011d7b7230ae" name="CalculateMedian" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="4b9fa09c-56dd-407a-a200-7e2d2cf762ce" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMedian)&quot;)" tag="DGQL" />
+              <reference Id="d368a509-7e70-402e-aa68-6146b23a19b8" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMedian)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMedian()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="8fe169df-fc6e-4ca8-8326-6a6e83bc6fde" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="af2982db-e9a1-4527-8933-890e79c94017" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="62316bfb-7393-4524-8761-93ba924b0e01" name="CalculateMin" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="598f3c8a-2cff-4525-a443-b4ea88e935d1" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMin)&quot;)" tag="DGQL" />
+              <reference Id="4138e856-b2ac-495f-8871-fc58da702ca6" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMin)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMin()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="355ebb53-4835-40d1-8d3e-14e62032f996" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="1536ec84-a3f9-4f93-a2b2-4a42c7c33445" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="1f085b5c-ff94-4c50-9a9e-f5bfc443a181" name="CalculateMax" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="02bc55d3-5e55-4d0f-9d2d-51a490fad97c" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMax)&quot;)" tag="DGQL" />
+              <reference Id="8283b146-5a36-4239-986d-f6c0a9db02b0" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMax)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMax()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="e330911e-1860-433f-a2e7-56768f7b3230" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="8d86cfba-f395-46fd-acf0-a670423116b5" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="17eb3db4-1b74-46ae-af43-8f9a06e00e37" name="CalculateMedian" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="4b83c80f-05c1-4048-8b68-032c75599116" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMedian)&quot;)" tag="DGQL" />
+              <reference Id="356a253c-ae16-4de8-9fb2-1cf2301c46bf" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMedian)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMedian()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="787735f1-b3af-42f9-bc67-1fbde7522486" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="247be390-aa93-4409-89e5-583e698cba2c" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="50b54755-31b5-446e-b314-8f289627a966" name="CalculateMin" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="2b86aeff-af64-4723-9954-114b6903ee5b" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMin)&quot;)" tag="DGQL" />
+              <reference Id="4ce07bf5-3390-4cd7-933c-d31493e68b6b" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMin)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMin()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="499e6f1e-17e8-4bf2-9aae-0bff534802a5" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="522c64ec-c602-47ba-8f7d-fa432b68df97" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="a74a1a43-d0cf-4719-8014-f9686a663622" name="IsDirectionUp" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="3b73ae08-64cb-4118-8ad6-eb8999a17ac0" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=IsDirectionUp)&quot;)" tag="DGQL" />
+              <reference Id="61b44cc2-7014-4355-bb22-2d2486cdf5fe" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=IsDirectionUp)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.IsDirectionUp()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="2bdc4196-d868-489c-8844-45b3f4c80098" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="2bf722cf-2c1e-4bc8-a04a-757559bbab60" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="d8c92a9c-b26b-4141-b026-38f7f0492b62" name="CalculateMedian" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="cbba5696-de61-4c57-94ae-b8ccf5a464de" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMedian)&quot;)" tag="DGQL" />
+              <reference Id="bb627a7a-4d22-43b4-8fa6-269208636e68" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMedian)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMedian()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a6899847-14d9-490d-b9cc-fb090fbcce08" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="2da5ae0f-776d-4562-b00d-ae7b4c086c5a" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="0a519393-d3fd-40ef-8688-0328874e5944" name="CalculateMin" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="a02edb9c-6821-42d7-8f2c-615be2e75cd8" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMin)&quot;)" tag="DGQL" />
+              <reference Id="c9b5311b-9f78-4b18-a4f9-79595918b683" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMin)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMin()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="39bd8e18-9145-4c7a-a2d4-16c96eb6fde5" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="559bb8de-fdd2-4ff0-93eb-16d69fc42624" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="ddfa0e19-b4da-4566-93f9-52ccd0ef0109" name="CalculateMax" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="1c24f157-90d1-4c22-8b2e-1b97f15565c3" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMax)&quot;)" tag="DGQL" />
+              <reference Id="398138f5-c751-4ae6-8f88-a138df8ee5ac" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMax)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMax()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="8f3949ce-47bf-4aab-a1bf-ec05d81e915f" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="96798143-990d-49a4-9d85-2c619f9a060b" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="d61b7578-f158-40b5-90ea-039a63207b98" name="CalculateMedian" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="b4cbd971-8d80-4840-add7-73ddd286ba18" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMedian)&quot;)" tag="DGQL" />
+              <reference Id="82411004-e0ac-4e85-8fd1-2a9c2f53714d" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=CalculateMedian)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.CalculateMedian()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="0920b78b-a80d-434f-a470-231e6621c407" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="b375e69e-d09f-4db8-bd5a-89210fcaa8dc" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="6ccdd384-9c0b-4d27-8cc4-3ac0da2ac345" name="IsDirectionUp" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="bc7d023f-464d-4e88-89b5-b82990453b9e" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=ChronosGestenerkennung)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&amp;quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=IsDirectionUp)&quot;)" tag="DGQL" />
+              <reference Id="c3bcf5f2-9875-4023-bc7d-758559bfae16" handle="(Assembly=&quot;$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)&quot; Namespace=ChronosGestenerkennung Type=CalcValues Member=IsDirectionUp)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAOy9B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Ih7/Gq9/jfzXqH+N4tfIfo2S/v0B/TX7NU74r/LXeEbfZL/Ggj47+jUe/xpvfo05tWh+jVe/RkX/tb9G+mucUdvPfo2Pfo2tX+OYPm+o3eLXmNB71/TpL/w1ftGvseZ2h7/GOb1X0rePfo27/N8J//YVv1HTv3fp/y39fk69Lemvp/TelN5Gz0v6Bi1+kvteM2YpYd3S7zP6rKK/9n6NnV9jl/5/99d4SfCqX+On6b2pvveU2gAKesh+jQvCdMJ/zxiPObdf0v+bX+Nz+lzwWDJeb/m3JfWzpPfu0nuFYpfT72v+7H0gjOmvd/R/nzLpr/FCKdz8Giv6bUq/ffaeUM33a/oOv6U0U9cEDZCOiVoXBOUF/XVF33yhcwQ4n/0al0zNNf31U7/GHZpH9+YLemdGP380w+8D4Wdnhv35FMmcEq3MzDWdmUMLQMKs1/SZmcETndHX9Pac5zH7NX5/+rSkn5hZwHhOv4N2Jb/RqryPAz5BuzP69JhxX1IPC/q5pk/wzjNuiVn/iHXGmZ2XJY/8Rzrj/SD87HDUj3TG/99n+P99OuNLamVmoKsVTH8HihV6WjEuGeMT9uHrGNFF36bfM3rD7wMt39Dba24HXWT8FnD7Xf7kbg8T+bTr6cint/WU/p8AAAD//++LjcFUCQAA
+(Assembly="$(bf2f013d-55e7-4aef-9800-a1ecc768592f.OutputPathUri)" Namespace=ChronosGestenerkennung.Gestures Type=AlgoNew Member=valueZ ObjectInstance="Object instance 8")
+this.valueZ : CalcValues
+valueZ.IsDirectionUp()</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="388f7465-8f30-410f-a6a5-c8f5027e9cda" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="c016dfa7-56bc-498b-82d3-cf6caca9678e" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="8710346d-f4cd-4ffb-b27b-f6b28e976aa7" name="Return" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false" signatureText="return !valueZ.IsDirectionUp()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="0eaf5ef3-5d99-4029-93d8-925eb265af10" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="3c81668a-7f4f-4602-87a2-0b851d198853" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="04a876f2-097d-4ea7-9516-5e79d7493104" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="89c2780e-1d0f-4b80-9ee1-c48a2d2c7e96" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>
