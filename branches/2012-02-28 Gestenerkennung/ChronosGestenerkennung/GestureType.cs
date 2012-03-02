@@ -1,7 +1,7 @@
 ﻿
 namespace ChronosGestenerkennung
 {
-    enum GestureType
+    public enum GestureType
     {
         Push,
         Up,
