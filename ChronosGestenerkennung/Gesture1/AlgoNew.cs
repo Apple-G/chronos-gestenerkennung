@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ChronosGestenerkennung.Gestures
+namespace ChronosGestenerkennung.Gesture1
 {
     class AlgoNew
     {
@@ -184,6 +184,28 @@ namespace ChronosGestenerkennung.Gestures
                 }
             }
             return false;
+        }
+
+        internal ChronosGestenerkennung.CalcValues CalcValues
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        internal ChronosGestenerkennung.CalcValues CalcValues1
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
         }
 
 

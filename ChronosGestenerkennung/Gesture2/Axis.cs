@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ChronosGestenerkennung
+namespace ChronosGestenerkennung.Gesture2
 {
-    class Config : Dictionary<GestureType, ConfigValues>
+    public enum Axis
     {
-
+        X,
+        Y,
+        Z
     }
 }

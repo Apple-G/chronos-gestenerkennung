@@ -54,15 +54,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Com\ChronosCommunication.cs" />
-    <Compile Include="Config.cs" />
-    <Compile Include="ConfigValues.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gestures\AlgoNew.cs" />
+    <Compile Include="Gesture1\AlgoNew.cs" />
+    <Compile Include="Gesture2\Algo.cs" />
+    <Compile Include="Gesture2\Axis.cs" />
+    <Compile Include="Gesture2\Circle.cs" />
+    <Compile Include="Gesture2\Controlling.cs" />
+    <Compile Include="Gesture2\Down.cs" />
+    <Compile Include="Gesture2\Gesture.cs" />
+    <Compile Include="Gesture2\Left.cs" />
+    <Compile Include="Gesture2\Point.cs" />
+    <Compile Include="Gesture2\Push.cs" />
+    <Compile Include="Gesture2\Right.cs" />
+    <Compile Include="Gesture2\Up.cs" />
+    <Compile Include="Gesture2\Wave.cs" />
     <Compile Include="GestureType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,7 +90,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagramAlgo2.cd" />
+    <None Include="ClassDiagramAlgo1.cd" />
+    <None Include="ClassDiagramAll.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
