@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChronosGestenerkennung.Form1">
+    <Position X="3.75" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQIkAAABCMQoDAAAIDYABACAAkCEIAAICAjAAANEIA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ChronosCommunication1" />
+      <Property Name="Controlling1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Com.ChronosCommunication">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAEAAAKAAAAAABAIAAAAAAABAAYAEAAAAAAAA=</HashCode>
+      <FileName>Com\ChronosCommunication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Circle" Collapsed="true">
+    <Position X="15.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gesture2\Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Controlling">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAggAEAAIAAAAAAAAAAABAAAAAyAQAAAAEAEAAQA=</HashCode>
+      <FileName>Gesture2\Controlling.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Algo1" />
+      <Property Name="Gesture1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Down" Collapsed="true">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gesture2\Down.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Gesture">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AHAAAACAAAAAAAAAAAkAAAQAAAAAAAIAAAAAAHAAAAA=</HashCode>
+      <FileName>Gesture2\Gesture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Left" Collapsed="true">
+    <Position X="10.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gesture2\Left.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Push" Collapsed="true">
+    <Position X="14.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gesture2\Push.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Right" Collapsed="true">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gesture2\Right.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Up" Collapsed="true">
+    <Position X="12.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gesture2\Up.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Wave" Collapsed="true">
+    <Position X="11" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gesture2\Wave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture2.Algo">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAgAAABAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAA=</HashCode>
+      <FileName>Gesture2\Algo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Gesture1" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
