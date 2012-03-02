@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChronosGestenerkennung.CalcValues">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAACAiAAABAAYAAAAIAAAAAAgAiAAAAAgAAAAAAA=</HashCode>
+      <FileName>CalcValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Form1">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQIkAAABCMQoDAAAIDYABACAAkCEIAAICAjAAANEIA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ChronosComm" />
+      <Property Name="AlgoNew1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Com.ChronosCommunication">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAEAAAKAAAAAABAIAAAAAAABAAYAEAAAAAAAA=</HashCode>
+      <FileName>Com\ChronosCommunication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChronosGestenerkennung.Gesture1.AlgoNew">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABEIAAAAAACEABgEAIAAAAAAAAACAkQAAAAAEhAAA=</HashCode>
+      <FileName>Gesture1\AlgoNew.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CalcValues1" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
